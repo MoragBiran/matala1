@@ -20,9 +20,9 @@ def abs_n (x):
         x=-x
     return x
 
-def ln (x) :
+def Ln (x) :
     if x <= 0:
-        return 0
+        return 0.0
     y0 = x-1.0
     y_new = 0
     while 0.001 < abs_n(y_new-y0):
@@ -32,23 +32,20 @@ def ln (x) :
 
 def XtimesY(x,y):
     if x <= 0:
-        return 0
+        return 0.0
     num = 0
-    num = exponent(y*ln(x))
+    num = exponent(y*Ln(x))
     num =float('%0.6f' % num)
     return num
-#B
-XtimesY(-2,2)
 
+#B
 def sqrt(x,y):
     if y<0.0 and x%2.0 == 0.0:
-        return 0
+        return 0.0
     num = 0
     num = XtimesY(y, 1.0/x)
     num = float('%0.6f' % num)
     return num
-
-#sqrt(5,-3)
 
 #C
 def calculate (x):

@@ -49,6 +49,8 @@ def sqrt(x,y):
 
 #C
 def calculate (x):
+    if x <= 0:
+        return 0.0
     num = exponent(x)*XtimesY(7,x)*(1/x)*sqrt(x,x)
     num =float('%0.6f' % num)
     return num
